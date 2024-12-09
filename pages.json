@@ -11,6 +11,12 @@
 			"style": {
 				"navigationBarTitleText": "播放器"
 			}
+		},
+		{
+			"path": "pages/index/list",
+			"style": {
+				"navigationBarTitleText": "播放器"
+			}
 		}
 	],
 	"globalStyle": {
