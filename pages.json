@@ -5,6 +5,12 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},
+		{
+			"path": "pages/index/detail",
+			"style": {
+				"navigationBarTitleText": "播放器"
+			}
 		}
 	],
 	"globalStyle": {

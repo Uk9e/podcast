@@ -2,7 +2,7 @@
   <view class="page">
     <view class="content">
       <view class="itemGroup" v-for="(item, index) in items" :key="index">
-        <view class="item">
+        <view class="item" @click="detail">
           <image class="itemImage" :src="item.image" />
           <text class="itemTitle">{{ item.title }}</text>
         </view>
@@ -17,55 +17,11 @@ export default {
     return {
       items: [
         {
-          image: "http://ith2.cn:9000/typora-pic/202411102356981.jpg",
+          image: "https://oss.ith2.cn/doc-pic/202411102356981.jpg",
           title: "谜踪之国-楼兰妖耳"
         },
         {
-          image: "http://ith2.cn:9000/doc-pic/mzzg-wyzp.jpg",
-          title: "谜踪之国-雾隐占婆"
-        },
-        {
-          image: "http://ith2.cn:9000/typora-pic/202411102356981.jpg",
-          title: "谜踪之国-楼兰妖耳"
-        },
-        {
-          image: "http://ith2.cn:9000/doc-pic/mzzg-wyzp.jpg",
-          title: "谜踪之国-雾隐占婆"
-        },
-        {
-          image: "http://ith2.cn:9000/doc-pic/mzzg-wyzp.jpg",
-          title: "谜踪之国-雾隐占婆"
-        },
-        {
-          image: "http://ith2.cn:9000/typora-pic/202411102356981.jpg",
-          title: "谜踪之国-楼兰妖耳"
-        },
-        {
-          image: "http://ith2.cn:9000/doc-pic/mzzg-wyzp.jpg",
-          title: "谜踪之国-雾隐占婆"
-        },
-        {
-          image: "http://ith2.cn:9000/doc-pic/mzzg-wyzp.jpg",
-          title: "谜踪之国-雾隐占婆"
-        },
-        {
-          image: "http://ith2.cn:9000/typora-pic/202411102356981.jpg",
-          title: "谜踪之国-楼兰妖耳"
-        },
-        {
-          image: "http://ith2.cn:9000/doc-pic/mzzg-wyzp.jpg",
-          title: "谜踪之国-雾隐占婆"
-        },
-        {
-          image: "http://ith2.cn:9000/doc-pic/mzzg-wyzp.jpg",
-          title: "谜踪之国-雾隐占婆"
-        },
-        {
-          image: "http://ith2.cn:9000/typora-pic/202411102356981.jpg",
-          title: "谜踪之国-楼兰妖耳"
-        },
-        {
-          image: "http://ith2.cn:9000/doc-pic/mzzg-wyzp.jpg",
+          image: "https://oss.ith2.cn:443/doc-pic/202412094354646.jpg",
           title: "谜踪之国-雾隐占婆"
         }
       ]
@@ -74,7 +30,13 @@ export default {
   onLoad() {
     console.log("组件加载");
   },
-  methods: {}
+  methods: {
+    detail(){
+      uni.navigateTo({
+        url: '/pages/index/detail'
+      })
+    }
+  }
 };
 </script>
 
@@ -131,6 +93,6 @@ export default {
   //color: white;
   color: #222222;
   font-size: 23rpx;
-  font-family: PingFangSC-Medium;
+
 }
 </style>
